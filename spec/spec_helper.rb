@@ -23,7 +23,7 @@ def configure
 end
 
 def run
-  Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
+  Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| load f}
 end
 
 if defined?(Spork)
