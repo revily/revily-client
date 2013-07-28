@@ -4,7 +4,7 @@ $:.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'revily/client/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'revily'
+  spec.name          = 'revily-client'
   spec.version       = Revily::Client::VERSION
   spec.authors       = ['Dan Ryan']
   spec.email         = ['hi@revi.ly']
