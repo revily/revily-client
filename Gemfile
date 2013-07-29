@@ -1,7 +1,15 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in revily-client.gemspec
-gemspec
+group :development do
+  gem 'guard-rspec',                        '>= 3.0.2', require: false  
+  gem 'guard-spork',                        '>= 1.5.1', require: false
+  gem 'libnotify',                                      require: false
+  gem 'pry',                                            require: false
+  gem 'rake'
+  gem 'rb-fsevent',                                     require: false
+  gem 'rb-inotify',                                     require: false
+  gem 'ruby_gntp',                                      require: false
+end
 
 group :test do
   gem 'json_spec', '~> 1.1'
@@ -9,3 +17,5 @@ group :test do
   gem 'webmock', '~> 1.13'
   gem 'vcr', '~> 2.5'
 end
+
+gemspec
