@@ -14,8 +14,10 @@ end
 group :test do
   gem 'json_spec', '~> 1.1'
   gem 'rspec', '~> 2.14'
+  gem 'rspec-instafail',                    '>= 0.2.4', require: false
   gem 'webmock', '~> 1.13'
   gem 'vcr', '~> 2.5'
+  # gem 'revily-api', path: 
 end
 
 gemspec

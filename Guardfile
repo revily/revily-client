@@ -1,9 +1,27 @@
-guard 'spork', rspec_env: { 'RAILS_ENV' => 'test' }, rspec_port: 19004, aggressive_kill: false do
+env = {
+  'RAILS_ENV' => 'test',
+  'RACK_ENV' => 'test',
+  'REVILY_API_ENDPOINT' => 'http://localhost:9001',
+  'REVILY_AUTH_TOKEN' => 'dGpYyvbApYxXGAvPekQjt'
+}
+
+guard(:spork,
+  rspec_env: env,
+  rspec_port: 19004,
+  aggressive_kill: false
+) do
   watch('Gemfile.lock')
   watch('spec/spec_helper.rb') { :rspec }
 end
 
-guard :rspec, cli: "--color --drb --drb-port=19004 --tty -f doc --profile", bundler: false, all_after_pass: false, all_on_start: false, keep_failed: false do
+guard(:rspec, 
+  cli: "--color --drb --drb-port=19004 --tty -r rspec/instafail -f RSpec::Instafail --profile",
+  env: env,
+  bundler: false,
+  all_after_pass: false,
+  all_on_start: false,
+  keep_failed: false
+) do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
