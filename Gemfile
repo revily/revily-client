@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'guard-rspec',                        '>= 3.0.2', require: false  
-  gem 'guard-spork',                        '>= 1.5.1', require: false
-  gem 'libnotify',                                      require: false
+  gem 'guard-rspec',                        '>= 3.0.2'#, require: false  
+  gem 'guard-spork',                        '>= 1.5.1'#, require: false
+  gem 'libnotify'#,                                      require: false
   gem 'pry',                                            require: false
   gem 'rake'
-  gem 'rb-fsevent',                                     require: false
-  gem 'rb-inotify',                                     require: false
-  gem 'ruby_gntp',                                      require: false
+  gem 'rb-fsevent'#,                                     require: false
+  gem 'rb-inotify'#,                                     require: false
+  gem 'ruby_gntp'#,                                      require: false
 end
 
 group :test do
@@ -19,5 +19,7 @@ group :test do
   gem 'vcr', '~> 2.5'
   # gem 'revily-api', path: 
 end
+
+# gem 'hyro',                                 github: 'danryan/hyro'
 
 gemspec

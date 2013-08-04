@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.revi.ly/services
+    body:
+      encoding: UTF-8
+      string: '{"name":"New Service","acknowledge_timeout":30,"auto_resolve_timeout":60}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 06:44:14 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Location:
+      - https://api.revi.ly/services/9qcd5Ckq
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f697592826f36d51b111f3e71bc72ff1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3b1c7fe9-39a2-41fb-8c8c-19feb7967fab
+      X-Runtime:
+      - '0.094132'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"9qcd5Ckq","name":"New Service","auto_resolve_timeout":60,"acknowledge_timeout":30,"state":"enabled","current_status":"okay","incident_counts":{"triggered":0,"acknowledged":0,"resolved":0},"_links":{"self":{"href":"/services/9qcd5Ckq"},"incidents":{"href":"/services/9qcd5Ckq/incidents"}}}'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 06:44:14 GMT
+recorded_with: VCR 2.5.0

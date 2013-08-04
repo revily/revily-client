@@ -10,11 +10,13 @@ module Revily::Client::Resources::Incidents
   end
 
   def acknowledge_incident(id, options={})
-    get "incidents/#{id}/acknowledge", options
+    boolean_from_response :put, "incidents/#{id}/acknowledge", options
   end
+  alias_method :acknowledge, :acknowledge_incident
 
   def resolve_incident(id, options={})
-    get "incidents/#{id}/resolve", options
+    boolean_from_response :put, "incidents/#{id}/resolve", options
   end
+  alias_method :resolve, :resolve_incident
 
 end

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.revi.ly/hooks
+    body:
+      encoding: UTF-8
+      string: '{"config":{"bar":"baz"},"name":"test","events":["incident.*"]}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 05:11:19 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Location:
+      - https://api.revi.ly/hooks/a9txCUNj
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a2ed64f1c325ba00c6f3cc370e5358ef"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0e3aa534-6cc8-42b9-b7ea-3482f153ec1e
+      X-Runtime:
+      - '0.049886'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"a9txCUNj","name":"test","events":["incident.acknowledged","incident.created","incident.deleted","incident.pending","incident.resolved","incident.triggered","incident.updated"],"config":{},"state":"enabled","_links":{"self":{"href":"/hooks/a9txCUNj"}}}'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 05:11:19 GMT
+recorded_with: VCR 2.5.0

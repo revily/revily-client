@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.revi.ly/users
+    body:
+      encoding: UTF-8
+      string: '{"name":"Bill Williamson","email":"bill@example.com","password":"worstpass"}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 16:51:26 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Location:
+      - https://api.revi.ly/users/0aMoDfFr
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"505462f08ae437fa5b04e402994a8529"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0f264f04-2744-4cd2-9ea8-b6c6f97e8a9d
+      X-Runtime:
+      - '0.430331'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"0aMoDfFr","email":"bill@example.com"}'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 16:51:26 GMT
+recorded_with: VCR 2.5.0

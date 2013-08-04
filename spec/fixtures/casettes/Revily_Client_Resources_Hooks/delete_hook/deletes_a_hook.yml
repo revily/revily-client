@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.revi.ly/hooks/MsxCMuKk
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 05:11:10 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 6df765d8-7597-44c7-b5a0-2368bef598a6
+      X-Runtime:
+      - '0.042993'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 05:11:10 GMT
+recorded_with: VCR 2.5.0

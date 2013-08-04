@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version     = '>= 1.9.3'
   spec.required_rubygems_version = '>= 1.3.6'
   
+  # spec.add_dependency 'excon'
   spec.add_dependency 'faraday', '~> 0.8'
   spec.add_dependency 'faraday_middleware', '~> 0.9'
   spec.add_dependency 'hashie', '~> 2.0'

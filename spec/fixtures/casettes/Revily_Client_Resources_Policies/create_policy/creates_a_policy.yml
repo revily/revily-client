@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.revi.ly/policies
+    body:
+      encoding: UTF-8
+      string: '{"name":"Operations","loop_limit":3}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 05:16:20 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Location:
+      - https://api.revi.ly/policies/0HWU1wzK
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ee9be569a4d3d3e03a5e95fa965bb936"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e4026a30-a373-46aa-843c-af60236fa702
+      X-Runtime:
+      - '0.081096'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"0HWU1wzK","name":"Operations","loop_limit":3,"_links":{"self":{"href":"/policies/0HWU1wzK"},"rules":{"href":"/policies/0HWU1wzK/rules"}}}'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 05:16:20 GMT
+recorded_with: VCR 2.5.0

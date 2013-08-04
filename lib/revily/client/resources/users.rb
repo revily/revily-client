@@ -9,14 +9,24 @@ module Revily::Client::Resources::Users
   end
 
   def create_user(name, email, password, options={})
-    post "users", options.merge({name: name, email: email, password: password})
+    params = {
+      name: name,
+      email: email,
+      password: password
+    }
+    post "users", options.merge(params)
   end
 
   def update_user(id, options={})
-    patch "users/#{id}", options
+    params = {
+      name: options[:name],
+      email: options[:email],
+      password: options[:password]
+    }.reject { |k,v| v.nil? }
+    boolean_from_response :patch, "users/#{id}", options.merge(params)
   end
 
   def delete_user(id, options={})
-    delete "users/#{id}", options
+    boolean_from_response :delete, "users/#{id}", options
   end
 end

@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.revi.ly/services/OCyySkGT
+    body:
+      encoding: UTF-8
+      string: '{"auto_resolve_timeout":60}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 06:46:28 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 81073c14-ef23-4247-802d-b3dbdeca93ee
+      X-Runtime:
+      - '0.051704'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 06:46:28 GMT
+- request:
+    method: get
+    uri: https://api.revi.ly/services/OCyySkGT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 06:46:28 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"c809fa664ce87f6198708b86e5dff774"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bb70ea73-fe37-4ae8-928f-1e54a32bcf38
+      X-Runtime:
+      - '0.049426'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"OCyySkGT","name":"Pingdom","auto_resolve_timeout":60,"acknowledge_timeout":30,"state":"enabled","current_status":"critical","incident_counts":{"triggered":1,"acknowledged":1,"resolved":1},"_links":{"self":{"href":"/services/OCyySkGT"},"incidents":{"href":"/services/OCyySkGT/incidents"}}}'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 06:46:28 GMT
+recorded_with: VCR 2.5.0

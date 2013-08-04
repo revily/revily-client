@@ -5,7 +5,7 @@ end
 def configure
   $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
   $LOAD_PATH.unshift(File.dirname(__FILE__))
-  require 'revily/client'
+  # require 'revily/client'
 
   require 'rspec'
   require 'webmock/rspec'
@@ -21,6 +21,7 @@ def configure
 end
 
 def run
+  require 'revily/client'
   Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| load f}
 end
 

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.revi.ly/policies/0K7Z5zHR
+    body:
+      encoding: UTF-8
+      string: '{"loop_limit":5}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 05:16:26 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1202f9ef-bf8d-416f-adcf-8dbc21d6e85d
+      X-Runtime:
+      - '0.045648'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 05:16:26 GMT
+recorded_with: VCR 2.5.0

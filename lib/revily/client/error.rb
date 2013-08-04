@@ -6,8 +6,10 @@ class Revily::Client
     end
 
     def response_body
-      @response_body ||= begin
-        if (body = @response[:body] && !body.empty?)
+      @response_body ||=
+        # return nil if @response.nil? && response[:body].nil?
+
+        if @response && (body = @response[:body]) && !body.empty?
           if body.is_a?(String)
             serializer = Sawyer::Serializer.new(Sawyer::Serializer.any_json)
             serializer.decode(body)
@@ -17,7 +19,6 @@ class Revily::Client
         else
           nil
         end
-      end
     end
 
     def build_error_message

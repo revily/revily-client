@@ -2,7 +2,7 @@ env = {
   'RAILS_ENV' => 'test',
   'RACK_ENV' => 'test',
   'REVILY_API_ENDPOINT' => 'http://localhost:9001',
-  'REVILY_AUTH_TOKEN' => 'dGpYyvbApYxXGAvPekQjt'
+  'REVILY_AUTH_TOKEN' => 'dGpYyvbApYxXGAvPkQjt'
 }
 
 guard(:spork,

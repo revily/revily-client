@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.revi.ly/incidents
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=UTF-8
+      Authorization:
+      - token dGpYyvbApYxXGAvPkQjt
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Aug 2013 04:51:39 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a10dbb396905ffeb4550ffa499581e4f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2f35dda3-71a3-4f1b-a057-ddd5a14f8e68
+      X-Runtime:
+      - '0.046120'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"id":"xOtaAzoZ","state":"resolved","triggered_at":null,"acknowledged_at":null,"resolved_at":null,"message":"lorem","description":null,"key":"a1e32fd8fe33bc77daa3ad19be4b757e","service_id":"OCyySkGT","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/xOtaAzoZ"},"service":{"href":"/services/OCyySkGT"}}},{"id":"Ih2DbDQZ","state":"acknowledged","triggered_at":null,"acknowledged_at":"2013-08-04T04:46:30.880Z","resolved_at":null,"message":"lorem
+        ipsum dolor sit amet consectetuer","description":null,"key":"568b476509f8729fca1e5ba91f8b0e16","service_id":"OCyySkGT","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/Ih2DbDQZ"},"service":{"href":"/services/OCyySkGT"}}},{"id":"EAdw8jJo","state":"triggered","triggered_at":"2013-08-04T04:45:55.036Z","acknowledged_at":null,"resolved_at":null,"message":"lorem
+        ipsum dolor sit amet consectetuer adipiscing","description":null,"key":"c473fa6ac16b24981b5a33e4a70e3a71","service_id":"OCyySkGT","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/EAdw8jJo"},"service":{"href":"/services/OCyySkGT"}}},{"id":"kIyMd608","state":"resolved","triggered_at":null,"acknowledged_at":null,"resolved_at":null,"message":"lorem
+        ipsum dolor sit amet consectetuer adipiscing elit proin risus","description":null,"key":"ce3a7b1348029600ac17aeac713b4e86","service_id":"txfaLHdb","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/kIyMd608"},"service":{"href":"/services/txfaLHdb"}}},{"id":"zxa2dkIn","state":"acknowledged","triggered_at":null,"acknowledged_at":"2013-08-04T04:46:51.700Z","resolved_at":null,"message":"lorem
+        ipsum dolor","description":null,"key":"115ccf2b68a74ed87c0f8b18dcab4e87","service_id":"txfaLHdb","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/zxa2dkIn"},"service":{"href":"/services/txfaLHdb"}}},{"id":"W0bUtfJU","state":"triggered","triggered_at":"2013-08-04T04:45:54.923Z","acknowledged_at":null,"resolved_at":null,"message":"lorem
+        ipsum dolor sit amet consectetuer adipiscing","description":null,"key":"b7dc4bf96e7442914813ec7055eedab2","service_id":"txfaLHdb","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/W0bUtfJU"},"service":{"href":"/services/txfaLHdb"}}},{"id":"CXGIBtSD","state":"resolved","triggered_at":null,"acknowledged_at":null,"resolved_at":null,"message":"lorem
+        ipsum dolor sit amet","description":null,"key":"464ee3a56056bd5a8c2e630f404269e5","service_id":"048j1N2J","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/CXGIBtSD"},"service":{"href":"/services/048j1N2J"}}},{"id":"f0B0BgmB","state":"resolved","triggered_at":null,"acknowledged_at":"2013-08-04T04:47:17.426Z","resolved_at":"2013-08-04T04:51:38.856Z","message":"lorem
+        ipsum dolor sit amet consectetuer","description":null,"key":"ab361b09804bbf2c8b8090e9eada3a3e","service_id":"048j1N2J","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/f0B0BgmB"},"service":{"href":"/services/048j1N2J"}}},{"id":"b7fQ1LuE","state":"acknowledged","triggered_at":"2013-08-04T04:45:54.832Z","acknowledged_at":"2013-08-04T04:51:38.704Z","resolved_at":null,"message":"lorem
+        ipsum","description":null,"key":"0f8ee9d086a8ab2f596bf7093e2aaafa","service_id":"048j1N2J","current_user_id":null,"current_policy_rule_id":null,"_links":{"self":{"href":"/incidents/b7fQ1LuE"},"service":{"href":"/services/048j1N2J"}}}]'
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 04:51:39 GMT
+recorded_with: VCR 2.5.0

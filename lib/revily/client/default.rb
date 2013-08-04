@@ -6,6 +6,7 @@ module Revily::Client::Default
   API_ENDPOINT = 'https://api.revi.ly'.freeze
   USER_AGENT = "Revily API Client v#{Revily::Client::VERSION}"
   CONTENT_TYPE = "application/vnd.revily.v1+json"
+  # CONTENT_TYPE = "application/json"
   MIDDLEWARE = Faraday::RackBuilder.new do |builder|
     builder.use Revily::Client::Response::RaiseError
     builder.adapter Faraday.default_adapter

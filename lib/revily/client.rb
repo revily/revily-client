@@ -80,6 +80,7 @@ module Revily
     def agent
       @agent ||= Sawyer::Agent.new(api_endpoint, sawyer_options) do |http|
         http.headers[:accept] = default_content_type
+        http.headers[:content_type] = 'application/json; charset=UTF-8'
         http.headers[:user_agent] = user_agent
         if token_authenticated?
           http.authorization 'token', @auth_token
@@ -108,7 +109,7 @@ module Revily
       end
 
       def boolean_from_response(method, path, options={})
-        request(:method, path, options)
+        request(method, path, options)
         @last_response.status == 204
       rescue Revily::Client::NotFound
         false

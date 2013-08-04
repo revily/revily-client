@@ -11,8 +11,16 @@ module Revily::Client::Resources::PolicyRules
   end
   alias :rule :policy_rule
 
-  def create_policy_rule(assignment_id, loop_limit, options={})
-    post "policies", options.merge({name: name, loop_limit: loop_limit})
+  def create_policy_rule(policy_id, assignment_id, assignment_type, position=nil, escalation_timeout=nil, options={})
+    params = {
+      position: position,
+      escalation_timeout: escalation_timeout,
+      assignment_attributes: {
+        id: assignment_id,
+        type: assignment_type
+      }
+    }
+    post "policies/#{policy_id}/rules", options.merge(params)
   end
   alias :create_rule :create_policy_rule
 
