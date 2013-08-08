@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://api.revi.ly/services/OCyySkGT
+    uri: https://api.revi.ly/schedules/wW2OWrse
     body:
       encoding: UTF-8
       string: '{}'
@@ -23,7 +23,7 @@ http_interactions:
       message: No Content
     headers:
       Date:
-      - Tue, 06 Aug 2013 21:46:47 GMT
+      - Tue, 06 Aug 2013 21:44:44 GMT
       Status:
       - 204 No Content
       Connection:
@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - c02a97e4-ec62-4715-b1c3-09d137a7d98b
+      - 72f4a1b2-bd2e-464f-9610-4992beaeba45
       X-Runtime:
-      - '0.392043'
+      - '0.283140'
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 06 Aug 2013 21:46:47 GMT
+  recorded_at: Tue, 06 Aug 2013 21:44:44 GMT
 recorded_with: VCR 2.5.0

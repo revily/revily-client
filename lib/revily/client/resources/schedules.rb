@@ -2,21 +2,29 @@ module Revily::Client::Resources::Schedules
   def schedules(options={})
     get "schedules", options
   end
-  alias :list_schedules :schedules
+  alias_method :list_schedules, :schedules
 
   def schedule(id, options={})
     get "schedules/#{id}", options
   end
 
-  def create_schedule(name, auto_resolve_timeout, acknowledge_timeout, options={})
-    post "schedules", options.merge({name: name})
+  def create_schedule(name, time_zone=nil, options={})
+    params = {
+      name: name,
+      time_zone: time_zone
+    }
+    post "schedules", options.merge(params)
   end
 
   def update_schedule(id, options={})
-    patch "schedules/#{id}", options
+    params = {
+      name: options[:name],
+      time_zone: options[:time_zone]
+    }.reject { |k,v| v.nil? }
+    boolean_from_response :patch, "schedules/#{id}", options
   end
 
   def delete_schedule(id, options={})
-    delete "schedules/#{id}", options
+    boolean_from_response :delete, "schedules/#{id}", options
   end
 end

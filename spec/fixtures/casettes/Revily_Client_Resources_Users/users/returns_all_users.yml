@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: delete
-    uri: https://api.revi.ly/services/OCyySkGT
+    method: get
+    uri: https://api.revi.ly/users
     body:
-      encoding: UTF-8
-      string: '{}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept:
       - application/vnd.revily.v1+json
@@ -19,13 +19,13 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 204
-      message: No Content
+      code: 200
+      message: OK
     headers:
       Date:
-      - Tue, 06 Aug 2013 21:46:47 GMT
+      - Tue, 06 Aug 2013 21:48:12 GMT
       Status:
-      - 204 No Content
+      - 200 OK
       Connection:
       - close
       X-Frame-Options:
@@ -36,15 +36,22 @@ http_interactions:
       - nosniff
       X-Ua-Compatible:
       - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"bde22d9b4a89f4745d3cdefbea6c3faa"'
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c02a97e4-ec62-4715-b1c3-09d137a7d98b
+      - 5b8addd9-3039-4388-9795-c4b15c4fd7d9
       X-Runtime:
-      - '0.392043'
+      - '0.043704'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: ''
+      string: '[{"id":"sZjlN4dv","name":"Dan Ryan","email":"dan@example.com"},{"id":"bcXbJOEH","name":"Elizabeth
+        Nichols","email":"grogers@voonder.biz"}]'
     http_version: 
-  recorded_at: Tue, 06 Aug 2013 21:46:47 GMT
+  recorded_at: Tue, 06 Aug 2013 21:48:12 GMT
 recorded_with: VCR 2.5.0

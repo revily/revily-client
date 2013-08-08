@@ -18,6 +18,11 @@ module Revily::Client::Resources::Services
   end
 
   def update_service(id, options={})
+    params = {
+      name: options[:name],
+      acknowledge_timeout: options[:acknowledge_timeout],
+      auto_resolve_timeout: options[:auto_resolve_timeout]
+    }.reject { |k,v| v.nil? }
     boolean_from_response :patch, "services/#{id}", options
   end
 

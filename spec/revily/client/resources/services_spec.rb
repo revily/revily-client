@@ -32,7 +32,8 @@ describe Revily::Client::Resources::Services do
 
   describe 'delete_service', :vcr do
     it 'deletes a service' do
-      service = client.delete_service "OCyySkGT"
+      response = client.delete_service "OCyySkGT"
+      expect(response).to be_true
     end
   end
 

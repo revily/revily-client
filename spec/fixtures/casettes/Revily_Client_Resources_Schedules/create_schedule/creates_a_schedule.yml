@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: delete
-    uri: https://api.revi.ly/services/OCyySkGT
+    method: post
+    uri: https://api.revi.ly/schedules
     body:
       encoding: UTF-8
-      string: '{}'
+      string: '{"name":"Developers"}'
     headers:
       Accept:
       - application/vnd.revily.v1+json
@@ -19,13 +19,13 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 204
-      message: No Content
+      code: 201
+      message: Created
     headers:
       Date:
-      - Tue, 06 Aug 2013 21:46:47 GMT
+      - Tue, 06 Aug 2013 21:32:07 GMT
       Status:
-      - 204 No Content
+      - 201 Created
       Connection:
       - close
       X-Frame-Options:
@@ -36,15 +36,23 @@ http_interactions:
       - nosniff
       X-Ua-Compatible:
       - chrome=1
+      Location:
+      - https://api.revi.ly/schedules/wW2OWrse
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"12d656ef435538e967b90b621c3ecc54"'
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c02a97e4-ec62-4715-b1c3-09d137a7d98b
+      - bcbd95f0-d7db-4647-bcc3-bbaf96a9d1b1
       X-Runtime:
-      - '0.392043'
+      - '0.530823'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: ''
+      string: '{"id":"wW2OWrse","name":"Developers","time_zone":"UTC","policy_rule_ids":[],"_links":{"self":{"href":"/schedules/wW2OWrse"},"layers":{"href":"/schedules/wW2OWrse/layers"}}}'
     http_version: 
-  recorded_at: Tue, 06 Aug 2013 21:46:47 GMT
+  recorded_at: Tue, 06 Aug 2013 21:32:07 GMT
 recorded_with: VCR 2.5.0

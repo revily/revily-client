@@ -1,6 +1,9 @@
 # Revily
 
-TODO: Write a gem description
+[![Build
+Status](https://secure.travis-ci.org/revily/revily-client.png?branch=master)](https://travis-ci.org/revily/revily-client)¬
+[![Code
+Climate](https://codeclimate.com/github/revily/revily-client.png)](https://codeclimate.com/github/revily/revily-client)¬
 
 ## Installation
 

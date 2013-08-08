@@ -25,12 +25,12 @@ module Revily::Client::Resources::PolicyRules
   alias :create_rule :create_policy_rule
 
   def update_policy_rule(policy_id, id, options={})
-    patch "policies/#{policy_id}/rules/#{id}", options
+    boolean_from_response :patch, "policies/#{policy_id}/rules/#{id}", options
   end
   alias :update_rule :update_policy_rule
 
   def delete_policy_rule(policy_id, id, options={})
-    delete "policies/#{policy_id}/rules/#{id}", options
+    boolean_from_response :delete, "policies/#{policy_id}/rules/#{id}", options
   end
   alias :delete_rule :delete_policy_rule
 

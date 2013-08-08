@@ -10,15 +10,19 @@ module Revily::Client::Resources::Policies
   end
 
   def create_policy(name, loop_limit, options={})
-    post "policies", options.merge({name: name, loop_limit: loop_limit})
+    params = {
+      name: name,
+      loop_limit: loop_limit
+    }
+    post "policies", options.merge(params)
   end
 
   def update_policy(id, options={})
-    patch "policies/#{id}", options
+    boolean_from_response :patch, "policies/#{id}", options
   end
 
   def delete_policy(id, options={})
-    delete "policies/#{id}", options
+    boolean_from_response :delete, "policies/#{id}", options
   end
 
 end
