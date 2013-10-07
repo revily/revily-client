@@ -1,3 +1,6 @@
+require 'faraday'
+require 'faraday_middleware'
+
 require 'revily/client/version'
 require 'revily/client/response/raise_error'
 
@@ -6,11 +9,6 @@ module Revily::Client::Default
   API_ENDPOINT = 'https://api.revi.ly'.freeze
   USER_AGENT = "Revily API Client v#{Revily::Client::VERSION}"
   CONTENT_TYPE = "application/vnd.revily.v1+json"
-  # CONTENT_TYPE = "application/json"
-  MIDDLEWARE = Faraday::RackBuilder.new do |builder|
-    builder.use Revily::Client::Response::RaiseError
-    builder.adapter Faraday.default_adapter
-  end
 
   class << self
 
@@ -36,11 +34,15 @@ module Revily::Client::Default
 
     # @return [Hash]
     def connection_options
-      {
+      opts = {
         headers: {
           accept: default_content_type,
-          user_agent: user_agent
-        }
+          user_agent: user_agent,
+          content_type: 'application/json; charset=utf-8',
+          authorization: "token #{auth_token}"
+        },
+        url: api_endpoint,
+        builder: middleware
       }
     end
 
@@ -49,7 +51,16 @@ module Revily::Client::Default
     end
 
     def middleware
-      MIDDLEWARE
+      Faraday::Builder.new do |builder|
+        builder.request :json
+        builder.request :authorization, 'token', auth_token
+
+        builder.use Her::Middleware::DefaultParseJSON
+        # builder.use Revily::Client::Response::RaiseError
+        # builder.response :logger
+
+        builder.adapter :net_http
+      end
     end
 
     def per_page

@@ -1,0 +1,680 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.revi.ly/hooks/8ITE9fKZ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '340'
+      Etag:
+      - '"da431a196f0d44746ded439ca363d1b5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=RXNMODlsbnhmOUF0c21YQ0JtZTZwMmlVUlhEVGpFY2hkWTQ5UStNVHFLc0ZPdktKRVY4ZXlGZlFhSzF4SkpVOG14SU54YytTT2Jac1V0dEd2cUtPN0E9PS0tYVE1Y3RGeHRMT01NVENZa0xLRDdsQT09--9c811f5d955a78c2a109443d960d507ac5b75b4b;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 2b8067f6-f196-4228-b6bf-16e9433e58a9
+      X-Runtime:
+      - '0.021960'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "8ITE9fKZ",
+          "name": "test",
+          "events": [
+            "incident.acknowledge",
+            "incident.create",
+            "incident.delete",
+            "incident.escalate",
+            "incident.resolve",
+            "incident.trigger",
+            "incident.update"
+          ],
+          "config": {
+          },
+          "state": "enabled",
+          "_links": {
+            "self": {
+              "href": "/hooks/8ITE9fKZ"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: get
+    uri: https://api.revi.ly/hooks/tv71NqCg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '340'
+      Etag:
+      - '"ccb62e932c01ee6f2fafa9f08d30f432"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=M3podnRoTUJvYmVmVFp2amxmaG90b3B5dittTit5OGZkK1ZwanVZZTdla1Z2WXFrZVlPVUY0ODNUdGtYVnhaUEZmbjVvVlZUMEF1OGtRa0FOU2NLZEE9PS0tbVBETDNwa09IK1Q2dE5CY1ZwZFhxUT09--18aaf6d6294d10a854dced27ba32606e1469d20c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 454f7360-b45d-4a7f-8ed7-a4f06d194195
+      X-Runtime:
+      - '0.027478'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "tv71NqCg",
+          "name": "test",
+          "events": [
+            "incident.acknowledge",
+            "incident.create",
+            "incident.delete",
+            "incident.escalate",
+            "incident.resolve",
+            "incident.trigger",
+            "incident.update"
+          ],
+          "config": {
+          },
+          "state": "enabled",
+          "_links": {
+            "self": {
+              "href": "/hooks/tv71NqCg"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: delete
+    uri: https://api.revi.ly/hooks/tv71NqCg
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _revily_session=UUVBZGhQcm56bUE5UlJvSnM0bTFKQmEzNVNzZ3dyMDFrRENwQTV2WFJhQnZRYytTOTlrNzA2d1lQdmozRE15U0VTSlU3VmFQSndiWHF5ejNZa1JOTEE9PS0tTWZLeWhHYytvdjdweFk5K09acFcydz09--b3ef50946fae79160fba38007e3823ccc96bbe47;
+        path=/; HttpOnly
+      X-Request-Id:
+      - d88521f3-dd74-4c8f-88f6-c1681acf50b5
+      X-Runtime:
+      - '0.025935'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: post
+    uri: https://api.revi.ly/hooks
+    body:
+      encoding: UTF-8
+      string: '{"name":"test","events":["incident.*"],"config":{"bar":"baz"}}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 201 Created
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Location:
+      - https://api.revi.ly/hooks/1Nk6IRiV
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '340'
+      Etag:
+      - '"f2a3bfc03ec744ee8b39d9b420e0da42"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=amd1aDF0NExBSlFwdkk0clFiVFJYVytQdUEyZWl6OHFnTlBobWhJc0wyUCszeUlVNkhTMzRQVnpVV0ViTko1cWI4NDFaVEdwMDh4Y2lGVEt4K3BDenc9PS0taGt6dDRxNmFNUnp3b0lHbmpKM0dpZz09--3d2449a164007c62087645982cb65f84ec3d71d2;
+        path=/; HttpOnly
+      X-Request-Id:
+      - fdb2c205-7780-4335-a221-462050476de6
+      X-Runtime:
+      - '0.038466'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "1Nk6IRiV",
+          "name": "test",
+          "events": [
+            "incident.acknowledge",
+            "incident.create",
+            "incident.delete",
+            "incident.escalate",
+            "incident.resolve",
+            "incident.trigger",
+            "incident.update"
+          ],
+          "config": {
+          },
+          "state": "enabled",
+          "_links": {
+            "self": {
+              "href": "/hooks/1Nk6IRiV"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: get
+    uri: https://api.revi.ly/hooks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1474'
+      Etag:
+      - '"fde82eb8efcb419f9c61f28ef643efa5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=VkNEM1dFVHM4VTlWOGhrWGdSK0taNVRXY2pERGhDalNKZGU4MUgrZUU5MW14ZnlGYUtxMFp4SU1zVnZxTFRmSGhKWHp0TVNpMHlLcExsa1UyMnlIWVE9PS0tWCtoMlBiUVBHY2YwNlhiYkovRUdhUT09--05fa5104a2d42453e2711aed77dae7d03f7c4af1;
+        path=/; HttpOnly
+      X-Request-Id:
+      - d84aed96-fc9e-40ad-8814-b2ebb34b69ab
+      X-Runtime:
+      - '0.026174'
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": "rNl3xu5M",
+            "name": "test",
+            "events": [
+              "service.create",
+              "service.delete",
+              "service.disable",
+              "service.enable",
+              "service.update"
+            ],
+            "config": {
+            },
+            "state": "enabled",
+            "_links": {
+              "self": {
+                "href": "/hooks/rNl3xu5M"
+              }
+            }
+          },
+          {
+            "id": "WAhPGJ4O",
+            "name": "log",
+            "events": [
+              "incident.acknowledge",
+              "incident.create",
+              "incident.delete",
+              "incident.escalate",
+              "incident.resolve",
+              "incident.trigger",
+              "incident.update"
+            ],
+            "config": {
+            },
+            "state": "enabled",
+            "_links": {
+              "self": {
+                "href": "/hooks/WAhPGJ4O"
+              }
+            }
+          },
+          {
+            "id": "a9txCUNj",
+            "name": "test",
+            "events": [
+              "incident.acknowledge",
+              "incident.create",
+              "incident.delete",
+              "incident.escalate",
+              "incident.resolve",
+              "incident.trigger",
+              "incident.update"
+            ],
+            "config": {
+            },
+            "state": "enabled",
+            "_links": {
+              "self": {
+                "href": "/hooks/a9txCUNj"
+              }
+            }
+          },
+          {
+            "id": "1Nk6IRiV",
+            "name": "test",
+            "events": [
+              "incident.acknowledge",
+              "incident.create",
+              "incident.delete",
+              "incident.escalate",
+              "incident.resolve",
+              "incident.trigger",
+              "incident.update"
+            ],
+            "config": {
+            },
+            "state": "enabled",
+            "_links": {
+              "self": {
+                "href": "/hooks/1Nk6IRiV"
+              }
+            }
+          }
+        ]
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: put
+    uri: https://api.revi.ly/hooks/1Nk6IRiV
+    body:
+      encoding: UTF-8
+      string: '{"name":"test","events":["service.*"],"id":"1Nk6IRiV","config":{},"state":"enabled"}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:52:45 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _revily_session=TUtKZkVqSEh2bFhoK1N1eWIyWlhUWDBNUHVSRWVGd2dmeC9yLzVLZmxMK0gzZU9xRE1JMGVNQmx3Z3pqczQ5KzlmOFc4WE5MRnRyZDl2SDkxcGdwVkE9PS0tbEM1NkZhak1GNVprbVhWZFl1U2I1dz09--55612e8040e5990b2ea3acd749713964ea9a2c82;
+        path=/; HttpOnly
+      X-Request-Id:
+      - dbc11814-016d-4560-982a-74a2951fe1da
+      X-Runtime:
+      - '0.033679'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:52:45 GMT
+- request:
+    method: get
+    uri: https://api.revi.ly/hooks/93d36Hr1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:53:10 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '340'
+      Etag:
+      - '"0ff61c89198fb2194a5affd8eeace481"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=eVpZcE5HZXU2eWhFWVZ2RlM5NHBoeW56b3p3MWwwL3B6YVhXSUpwZTlZQzIrSHZULy9CMG1Ba1h2V1lrTlNlZHBnRGpEZVdHNWJPRU14ZjNaVjB5WXc9PS0tWXZMUWkzTVRZYXZ5WHhBNytBRjdqZz09--e032e25bddc87fe21c0ee7d0c1e7c56bad00be74;
+        path=/; HttpOnly
+      X-Request-Id:
+      - cb14b8f0-4ad0-4427-b51e-a76ff80305c7
+      X-Runtime:
+      - '0.027462'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "93d36Hr1",
+          "name": "test",
+          "events": [
+            "incident.acknowledge",
+            "incident.create",
+            "incident.delete",
+            "incident.escalate",
+            "incident.resolve",
+            "incident.trigger",
+            "incident.update"
+          ],
+          "config": {
+          },
+          "state": "enabled",
+          "_links": {
+            "self": {
+              "href": "/hooks/93d36Hr1"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:53:10 GMT
+- request:
+    method: get
+    uri: https://api.revi.ly/hooks/TZY0Az2D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:53:10 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '340'
+      Etag:
+      - '"337f1ba8b22fa10e1f57a2d9d9f4b544"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _revily_session=a2NNcnAyU2ZGMXl0WmtrVjRBdHlUZHpiNFE3cFJRN25zT0ZZVnY3RGNxa1oxdFpDci85eG45bUdpNGJLZ3VoVnBvOEx5Tmp1UDNNMWRScHQ4bjB0d1E9PS0tWUtCTTM0VzRobjVZbFJMUUdSL0hHdz09--8d4abf9f48fda4d0c78c54c74dfe1c3c505d89c7;
+        path=/; HttpOnly
+      X-Request-Id:
+      - fbc4ead7-0e40-4b1e-a9f8-34b7cc0d4313
+      X-Runtime:
+      - '0.027614'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "TZY0Az2D",
+          "name": "test",
+          "events": [
+            "incident.acknowledge",
+            "incident.create",
+            "incident.delete",
+            "incident.escalate",
+            "incident.resolve",
+            "incident.trigger",
+            "incident.update"
+          ],
+          "config": {
+          },
+          "state": "enabled",
+          "_links": {
+            "self": {
+              "href": "/hooks/TZY0Az2D"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:53:10 GMT
+- request:
+    method: delete
+    uri: https://api.revi.ly/hooks/TZY0Az2D
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.revily.v1+json
+      User-Agent:
+      - Revily API Client v0.0.2
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - token <Authentication Token>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Mon, 07 Oct 2013 09:53:10 GMT
+      Status:
+      - 204 No Content
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _revily_session=bWFZQ1BuZHRLZXhnbzkxNDd2MFI4dVd2d1lONjgyTjRCUitwU2xTaGJNSDl4RHh5L2ZPWjlSem5Ea2tGTkxxNExwRHZxYWgzTldOckFEdzBxUVBxaGc9PS0tT2I0eGY1UEdBRzJLR0dDSU91SHVmUT09--02620c69275a817ecc8b53d10a28e531dc459d54;
+        path=/; HttpOnly
+      X-Request-Id:
+      - eed04afc-985e-44cc-9dc6-8eef00f6eb1b
+      X-Runtime:
+      - '0.031722'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 07 Oct 2013 09:53:10 GMT
+recorded_with: VCR 2.6.0
