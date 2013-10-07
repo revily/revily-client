@@ -7,6 +7,9 @@ module Revily::Client::Response
   # HTTP status codes returned by the API
   class RaiseError < Faraday::Response::Middleware
 
+    # register_middleware :response,
+      # :revily_raise_error => lambda { self }
+
     # Status code to error mappings
     # @private
     ERROR_MAP = {

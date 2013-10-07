@@ -1,4 +1,4 @@
-class Revily::Client
+module Revily::Client
   class Error < StandardError
     def initialize(response=nil)
       @response = response
@@ -7,18 +7,15 @@ class Revily::Client
 
     def response_body
       @response_body ||=
-        # return nil if @response.nil? && response[:body].nil?
-
-        if @response && (body = @response[:body]) && !body.empty?
-          if body.is_a?(String)
-            serializer = Sawyer::Serializer.new(Sawyer::Serializer.any_json)
-            serializer.decode(body)
-          else
-            body
-          end
+      if @response && (body = @response[:body].strip) && !body.empty?
+        if body.is_a?(String)
+          MultiJson.decode(body)
         else
-          nil
+          body
         end
+      else
+        nil
+      end
     end
 
     def build_error_message
@@ -29,10 +26,17 @@ class Revily::Client
       else
         ''
       end
-      errors = unless message.empty?
-        response_body['errors'] ?  ": #{response_body['errors'].map{|e|e['message']}.join(', ')}" : ''
+      errors = response_body && response_body['errors'] ?  map_error_messages : []
+      "#{@response[:method].to_s.upcase} #{@response[:url].to_s}: #{@response[:status]}#{message}#{errors.join('; ')}"
+    end
+
+    def map_error_messages
+      response_body['errors'].inject([]) do |messages, (attribute,values)|
+        values.each do |value|
+          messages << "#{attribute} #{value}"
+        end
+        messages
       end
-      "#{@response[:method].to_s.upcase} #{@response[:url].to_s}: #{@response[:status]}#{message}#{errors}"
     end
   end
 
